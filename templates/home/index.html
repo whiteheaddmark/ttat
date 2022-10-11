@@ -1,0 +1,49 @@
+{% extends "shared/layout.html" %}
+
+{% block content %}
+
+<h1><span class="font-semi-bold">A RESTful Proposal Service</span>
+</h1>
+
+<div style="clear:both;"></div>
+<br>
+<br>
+<p class="lead">
+    <strong>Endpoints</strong>
+<ul>
+    <li>
+        <strong>Find a proposal</strong><br>
+        <a href="/api/proposal/Sem19A-024" target="_blank"><strong>GET /api/proposal/{id}</strong></a><br>
+        <br>
+        <div style="font-size: 12px;">
+            <strong>Parameters</strong>
+            <ul>
+                <li><strong>Required</strong>: <code>id={id}</code> - the proposal you want to find.
+                </li>
+            </ul>
+        </div>
+    </li>
+    <br>
+    <li>
+        <strong>Get all proposals</strong><br>
+        <a href="/api/proposals" target="_blank"><strong>GET /api/proposals</strong></a><br>
+        <br>
+    </li>
+    <li>
+        <strong>Post a proposal</strong><br>
+        <a href="/api/proposal" target="_blank"><strong>Post /api/proposal/{Proposal}</strong></a><br>
+        <br>
+        <div style="font-size: 12px;">
+            <strong>Parameters</strong>
+            <ul>
+                <li><strong>Required</strong>: <code>Proposal={Proposal}</code> - the proposal you want to submit.
+                </li>
+            </ul>
+        </div>
+    </li>
+</ul>
+</p>
+
+</div>
+
+{% endblock %}

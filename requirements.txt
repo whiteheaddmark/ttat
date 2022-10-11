@@ -1,0 +1,6 @@
+pylint
+pydantic
+fastapi
+uvicorn
+jinja2
+aiofiles
